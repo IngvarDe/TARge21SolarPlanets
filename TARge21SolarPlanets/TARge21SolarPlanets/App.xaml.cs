@@ -1,7 +1,6 @@
 ﻿#if WINDOWS
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
-using TARge21SolarPlanets.Views;
 using Windows.Graphics;
 #endif
 
