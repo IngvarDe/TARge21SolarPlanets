@@ -67,23 +67,31 @@
                     Style="{StaticResource PlanetHeaderSubtitleStyle}"
                     Text="{Binding Subtitle}" />
 
+                <!--Divider-->
+                
                 <Rectangle
                     HorizontalOptions="Fill"
                     HeightRequest="2"
                     Stroke="Transparent"
                     Fill="{StaticResource LightBorderColor}" />
 
+                <!--Planet info-->
+                
                 <Label
                     LineBreakMode="WordWrap"
                     Style="{StaticResource PlanetDetailsTextStyle}"
                     Text="{Binding Description}" />
 
+                <!--Divider-->
+                
                 <Rectangle
                     HorizontalOptions="Fill"
                     HeightRequest="2"
                     Stroke="Transparent"
                     Fill="{StaticResource LightBorderColor}" />
 
+                <!--Planet Images-->
+                
                 <Label
                     Style="{StaticResource PlanetHeaderSubtitleStyle}"
                     Text="Gallery" />
@@ -106,15 +114,8 @@
                             <Image
                                 Source="{Binding .}"
                                 Aspect="AspectFill"
-                                HorizontalOptions="Fill"
-                                VerticalOptions="Fill"
-                                WidthRequest="200"
-                                HeightRequest="200">
-                                <Image.Clip>
-                                    <RoundRectangleGeometry
-                                        Rect="0,0,200,200"
-                                        CornerRadius="16" />
-                                </Image.Clip>
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
                             </Image>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
